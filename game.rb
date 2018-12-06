@@ -21,7 +21,7 @@ class Game
       return true
     else
       # p "You guessed #{guess}."
-      @guessed_letters.push(guess)
+      @guessed_letters.push(guess.downcase!)
     end
   end
 

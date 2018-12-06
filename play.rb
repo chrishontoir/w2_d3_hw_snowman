@@ -5,7 +5,7 @@ require_relative('./player')
 
 
 p "Enter a word/phrase:"
-word_to_guess = gets.chomp
+word_to_guess = gets.chomp.downcase!
 @hidden_word = HiddenWord.new(word_to_guess)
 system "clear"
 
